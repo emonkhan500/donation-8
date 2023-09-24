@@ -1,5 +1,5 @@
 import Banner from "../Banner/Banner";
-import DonationList from "../DonationList/DonationList";
+import DonationList from "../DonationList/DonationLists";
 
 
 const Home = () => {
