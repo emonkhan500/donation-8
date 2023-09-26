@@ -1,16 +1,22 @@
+import img from '../../assets/Resources/Rectangle 4287-1.png'
+
 const Banner = () => {
+
   return (
-    <div>
+    <div style={{backgroundColor:'#FFFFFFF2'}}>
       <div
-        className="hero min-h-screen"
+        className="hero h-[600px]"
         style={{
+          // backgroundImage:
+          //   "url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg)",
+
           backgroundImage:
-            "url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg)",
+            "url(https://i.ibb.co/njtYNDL/istockphoto-1425582326-1024x1024.jpg)",
         }}
       >
-        <div className="hero-overlay bg-opacity-60"></div>
+        <div className="hero-overlay bg-opacity-90"></div>
         <div className="hero-content text-center text-neutral-content">
-          <div className="max-w-md">
+          <div className="max-w-full">
             <h2 className="text-5xl font-bold text-center pt-12">
               I Grow By Helping People In Need
             </h2>
