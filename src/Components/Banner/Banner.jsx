@@ -1,6 +1,8 @@
+import { useState } from 'react';
 import img from '../../assets/Resources/Rectangle 4287-1.png'
 
-const Banner = () => {
+const Banner = ({setValue}) => {
+  const [inputValue ,setInputValue]=useState('')
 
   return (
     <div style={{backgroundColor:'#FFFFFFF2'}}>
@@ -21,12 +23,12 @@ const Banner = () => {
               I Grow By Helping People In Need
             </h2>
             <div className=" text-center mt-7">
-              <input
+              <input onChange={(e)=>{setInputValue(e.target.value)}}
                 className="border p-2 w-96 rounded"
                 type="text"
                 placeholder="Search"
               />
-              <button className="bg-red-600 p-2 rounded border text-white">
+              <button onClick={()=>setValue(inputValue)} className="bg-red-600 p-2 rounded border text-white">
                 Search
               </button>
             </div>

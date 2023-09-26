@@ -16,7 +16,7 @@ saveDonation(idInt);
   toast('You donation complete');
 
 }
-
+const color = donation.text_color
   return (
     <div className="px-36">
       <div className="relative flex justify-center items-center">
@@ -26,7 +26,7 @@ saveDonation(idInt);
                     
             </div>
             <div>
-              <button onClick={handleDonation} className="rounded px-4  text-white lg:left-[346px] btn bg-red-600 lg:top-[710px] absolute">Donate $290</button>
+          <button style={{backgroundColor:color}} onClick={handleDonation} className={`rounded px-4  text-white lg:left-[346px] btn  lg:top-[710px] absolute`}>Donate $290</button>
             </div>
       <p className="text-4xl font-bold mt-14 mb-6">{donation.title}</p>
       <p className="mb-32">{donation.description}</p>
